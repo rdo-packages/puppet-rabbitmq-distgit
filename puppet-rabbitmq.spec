@@ -13,7 +13,7 @@ Source0:        https://github.com/puppetlabs/puppetlabs-rabbitmq/archive/%{vers
 BuildArch:      noarch
 
 Requires:       puppet-stdlib
-Requires:       puppet-apt
+#Requires:       puppet-apt
 Requires:       puppet-staging
 Requires:       puppet >= 2.7.0
 
