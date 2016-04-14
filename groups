@@ -1,5 +1,5 @@
-# UUID          Group Name
-6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
-722f3c9b62836a5f8525b5cb5548f71abc1b4c7d       	puppet-rabbitmq-distgit-core
-7fdd2061d7e819ce2f726e46b6983eb4da8131e1        	puppet-rabbitmq-distgit-ptl
-global:Registered-Users		Registered Users
+# UUID                                  	Group Name
+#
+722f3c9b62836a5f8525b5cb5548f71abc1b4c7d	puppet-rabbitmq-distgit-core
+7fdd2061d7e819ce2f726e46b6983eb4da8131e1	puppet/puppet-rabbitmq-distgit-ptl
+global:Registered-Users                 	Registered Users
