@@ -7,8 +7,8 @@
 
 
 Name:           puppet-rabbitmq
-Version:        XXX
-Release:        XXX
+Version:        5.5.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Installs, configures, and manages RabbitMQ.
 License:        Apache-2.0
 
@@ -51,4 +51,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/rabbitmq/
 
 
 %changelog
+* Thu Sep 22 2016 Haikel Guemar <hguemar@fedoraproject.org> - 5.5.0-1.837d556.git
+- Newton update 5.5.0 (837d556a1a817f78f4e92b80643b8d43ff437f46)
+
 
