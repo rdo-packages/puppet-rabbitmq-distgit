@@ -1,13 +1,13 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-rabbitmq
-%global commit 837d556a1a817f78f4e92b80643b8d43ff437f46
+%global commit 057a0138f9a53a1d8b7a582734968ec194c3c705
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-rabbitmq
-Version:        5.5.0
+Version:        5.6.0
 Release:        1%{?alphatag}%{?dist}
 Summary:        Installs, configures, and manages RabbitMQ.
 License:        Apache-2.0
@@ -51,6 +51,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/rabbitmq/
 
 
 %changelog
+* Fri Oct 28 2016 Jon Schlueter <jschluet@redhat.com> 5.6.0-1
+- Update to 5.6.0 (057a0138f9a53a1d8b7a582734968ec194c3c705)
+
 * Thu Sep 22 2016 Haikel Guemar <hguemar@fedoraproject.org> - 5.5.0-1.837d556.git
 - Newton update 5.5.0 (837d556a1a817f78f4e92b80643b8d43ff437f46)
 
