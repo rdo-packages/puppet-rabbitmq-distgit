@@ -1,25 +1,20 @@
-%{!?upstream_version: %global upstream_version %{commit}}
+%{!?upstream_version: %global upstream_version %{version}}
 %define upstream_name puppetlabs-rabbitmq
-%global commit 057a0138f9a53a1d8b7a582734968ec194c3c705
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-# DO NOT REMOVE ALPHATAG
-%global alphatag .%{shortcommit}git
 
 
 Name:           puppet-rabbitmq
 Version:        5.6.0
-Release:        1%{?alphatag}%{?dist}
+Release:        1%{?dist}
 Summary:        Installs, configures, and manages RabbitMQ.
 License:        Apache-2.0
 
 URL:            https://github.com/puppetlabs/puppetlabs-rabbitmq
 
-Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
+Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 
 Requires:       puppet-stdlib
-#Requires:       puppet-apt
 Requires:       puppet-staging
 Requires:       puppet >= 2.7.0
 
