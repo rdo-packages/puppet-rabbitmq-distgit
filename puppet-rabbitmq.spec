@@ -1,16 +1,20 @@
-%{!?upstream_version: %global upstream_version %{version}}
+%{!?upstream_version: %global upstream_version %{commit}}
+%global commit 12aa7ccceb7d93cbf9d68c1b3338195bf8ce5564
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+%global alphatag .%{shortcommit}git
+
 %define upstream_name puppetlabs-rabbitmq
 
 
 Name:           puppet-rabbitmq
 Version:        5.6.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Installs, configures, and manages RabbitMQ.
 License:        Apache-2.0
 
 URL:            https://github.com/puppetlabs/puppetlabs-rabbitmq
 
-Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{upstream_version}.tar.gz
+Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 
 BuildArch:      noarch
 
@@ -46,6 +50,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/rabbitmq/
 
 
 %changelog
+* Tue Nov 15 2016 Alfredo Moralejo <amoralej@redhat.com> 5.6.0-2.12aa7cc.git
+- Newton update 5.6.0 (12aa7ccceb7d93cbf9d68c1b3338195bf8ce5564)
+
 * Fri Oct 28 2016 Jon Schlueter <jschluet@redhat.com> 5.6.0-1
 - Update to 5.6.0 (057a0138f9a53a1d8b7a582734968ec194c3c705)
 
