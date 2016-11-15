@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5adbc538_cb0e9334",
+        "filename": "puppet-rabbitmq.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2016-11-15T23:51:41Z",
+      "side": 1,
+      "message": "I didn\u0027t follow closely but in https://etherpad.openstack.org/p/ocata-puppet\npinning puppet-rabbitmq to 5.3.1 was mentioned, are we not hitting the issue described there?",
+      "revId": "e3766ee8932f78027847d3f21578d4ef84059ab0",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
