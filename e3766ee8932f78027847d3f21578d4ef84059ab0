@@ -16,6 +16,24 @@
       "revId": "e3766ee8932f78027847d3f21578d4ef84059ab0",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5adbc538_6b749f9c",
+        "filename": "puppet-rabbitmq.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 303
+      },
+      "writtenOn": "2016-11-16T00:14:45Z",
+      "side": 1,
+      "message": "That pin is for r10k because of naming collisions in the puppet world (metadata.json inconsistencies between modules for the rename). If you\u0027re installing via these packages you don\u0027t hit that.",
+      "parentUuid": "5adbc538_cb0e9334",
+      "revId": "e3766ee8932f78027847d3f21578d4ef84059ab0",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
