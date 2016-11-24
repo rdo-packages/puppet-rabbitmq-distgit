@@ -8,7 +8,7 @@
 
 Name:           puppet-rabbitmq
 Version:        5.6.0
-Release:        2%{?dist}
+Release:        2%{?alphatag}%{?dist}
 Summary:        Installs, configures, and manages RabbitMQ.
 License:        Apache-2.0
 
@@ -50,7 +50,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/rabbitmq/
 
 
 %changelog
-* Tue Nov 15 2016 Alfredo Moralejo <amoralej@redhat.com> 5.6.0-2.12aa7cc.git
+* Thu Nov 24 2016 Alfredo Moralejo <amoralej@redhat.com> 5.6.0-2.12aa7cc.git
 - Newton update 5.6.0 (12aa7ccceb7d93cbf9d68c1b3338195bf8ce5564)
 
 * Fri Oct 28 2016 Jon Schlueter <jschluet@redhat.com> 5.6.0-1
