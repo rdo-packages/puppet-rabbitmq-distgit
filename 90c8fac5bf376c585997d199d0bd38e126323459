@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5adbc538_a0207e9c",
+        "filename": "puppet-rabbitmq.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2016-11-24T12:33:11Z",
+      "side": 1,
+      "message": "-2 w/o alphatag was not released so I\u0027ll merge last two changelog entries.\nPackaging details are also normaly not interesting to the target audience.",
+      "revId": "90c8fac5bf376c585997d199d0bd38e126323459",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
