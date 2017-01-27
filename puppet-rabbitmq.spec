@@ -10,7 +10,7 @@ Name:           puppet-rabbitmq
 Version:        XXX
 Release:        XXX
 Summary:        Installs, configures, and manages RabbitMQ.
-License:        Apache-2.0
+License:        ASL 2.0
 
 URL:            https://github.com/puppetlabs/puppetlabs-rabbitmq
 
