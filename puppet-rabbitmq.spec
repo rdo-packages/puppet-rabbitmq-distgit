@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-rabbitmq
-%global commit 837d556a1a817f78f4e92b80643b8d43ff437f46
+%global commit 5ac45dedd9b409c9efac654724bc74867cb9233b
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-rabbitmq
-Version:        XXX
-Release:        XXX
+Version:        5.6.0
+Release:        4%{?alphatag}%{?dist}
 Summary:        Installs, configures, and manages RabbitMQ.
 License:        ASL 2.0
 
@@ -50,5 +50,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/rabbitmq/
 
 
 %changelog
-
+* Thu Aug 24 2017 Alfredo Moralejo <amoralej@redhat.com> 5.6.0-4.5ac45degit
+- Pike update 5.6.0 (5ac45dedd9b409c9efac654724bc74867cb9233b)
 
