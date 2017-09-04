@@ -1,5 +1,5 @@
 %{!?upstream_version: %global upstream_version %{commit}}
-%define upstream_name puppetlabs-rabbitmq
+%define upstream_name puppet-rabbitmq
 %global commit 5ac45dedd9b409c9efac654724bc74867cb9233b
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
@@ -18,9 +18,9 @@ Release:        4%{?alphatag}%{?dist}
 Summary:        Installs, configures, and manages RabbitMQ.
 License:        ASL 2.0
 
-URL:            https://github.com/puppetlabs/puppetlabs-rabbitmq
+URL:            https://github.com/voxpupuli/puppet-rabbitmq
 
-Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
+Source0:        https://github.com/voxpupuli/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 
 BuildArch:      noarch
 
