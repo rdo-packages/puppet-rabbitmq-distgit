@@ -15,8 +15,6 @@ License:        ASL 2.0
 URL:            https://github.com/voxpupuli/puppet-rabbitmq
 
 Source0:        https://github.com/voxpupuli/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
-# FIXME(jpena): temp patch to fix idempotency, see https://github.com/voxpupuli/puppet-rabbitmq/issues/618
-Patch0001:      0001-Fix-for-618-adds-config_ranch-parameter-default-true.patch
 
 BuildArch:      noarch
 
@@ -28,7 +26,7 @@ Requires:       puppet >= 2.7.0
 Installs, configures, and manages RabbitMQ.
 
 %prep
-%autosetup -n %{upstream_name}-%{upstream_version} -p1
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
