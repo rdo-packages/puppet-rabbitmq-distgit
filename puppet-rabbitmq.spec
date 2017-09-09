@@ -54,3 +54,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/rabbitmq/
 %changelog
 
 
+# REMOVEME: error caused by commit https://github.com/voxpupuli/puppet-rabbitmq/commit/555a3c60dfab9b2e8d552569b0cc0832b5687231
