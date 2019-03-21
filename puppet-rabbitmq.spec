@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-rabbitmq
-%global commit 48e8723c55d019ad419a7430700d034a6843fa6a
+%global commit 5477e69eccc009e3685d8eb7715e6dcae29966e6
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-rabbitmq
-Version:        XXX
-Release:        XXX
+Version:        9.0.1
+Release:        0.1%{?alphatag}%{?dist}
 Summary:        Installs, configures, and manages RabbitMQ.
 License:        ASL 2.0
 
@@ -49,5 +49,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/rabbitmq/
 
 
 %changelog
+* Thu Feb 15 2018 RDO <dev@lists.rdoproject.org> 9.0.1-0.1.5477e69git
+- Update to pre-release of 9.0.1 (5477e69eccc009e3685d8eb7715e6dcae29966e6)
+
 
 
