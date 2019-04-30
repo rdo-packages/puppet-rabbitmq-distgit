@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-rabbitmq
-%global commit 7613f08657d6640b22ec0f4cb55cf5b3c2f2e397
+%global commit 48e8723c55d019ad419a7430700d034a6843fa6a
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
@@ -49,7 +49,5 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/rabbitmq/
 
 
 %changelog
-* Mon Apr 29 2019 Sofer Athlan-Guyot <chem@sathlan.org>
-- Update to include fix for rabbitmq_plugins_dirs fact
 
 
