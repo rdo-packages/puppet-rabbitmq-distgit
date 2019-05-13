@@ -5,7 +5,6 @@
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
-
 Name:           puppet-rabbitmq
 Version:        XXX
 Release:        XXX
