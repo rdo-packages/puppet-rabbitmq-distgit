@@ -6,7 +6,7 @@
 %global alphatag .%{shortcommit}git
 
 Name:           puppet-rabbitmq
-Version:        9.1.0
+Version:        10.0.0
 Release:        1%{?alphatag}%{?dist}
 Summary:        Installs, configures, and manages RabbitMQ.
 License:        ASL 2.0
@@ -48,6 +48,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/rabbitmq/
 
 
 %changelog
+* Fri Mar 06 2020 RDO <dev@lists.rdoproject.org> 10.0.0-1.75574b8git
+- Update to 10.0.0
+
 * Thu Oct 3 2019 RDO <dev@lists.rdoproject.org> 9.1.0-1.75574b8git
 - Update to post 9.1.0 (75574b8f4a921cacda86ff30d378308084afa0d4)
 
