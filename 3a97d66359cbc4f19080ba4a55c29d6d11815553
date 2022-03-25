@@ -16,6 +16,23 @@
       "message": "needs puppet-archive",
       "revId": "3a97d66359cbc4f19080ba4a55c29d6d11815553",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f168eeba_5d2445f6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-03-25T15:56:30Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "3a97d66359cbc4f19080ba4a55c29d6d11815553",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
