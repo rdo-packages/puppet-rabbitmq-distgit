@@ -1,9 +1,5 @@
-%{!?upstream_version: %global upstream_version %{commit}}
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %define upstream_name puppet-rabbitmq
-%global commit 48e8723c55d019ad419a7430700d034a6843fa6a
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-# DO NOT REMOVE ALPHATAG
-%global alphatag .%{shortcommit}git
 
 Name:           puppet-rabbitmq
 Version:        XXX
@@ -13,7 +9,7 @@ License:        ASL 2.0
 
 URL:            https://github.com/voxpupuli/puppet-rabbitmq
 
-Source0:        https://github.com/voxpupuli/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
+Source0:        https://github.com/voxpupuli/%{upstream_name}/archive/v%{upstream_version}.tar.gz
 BuildArch:      noarch
 
 Requires:       puppet-stdlib
