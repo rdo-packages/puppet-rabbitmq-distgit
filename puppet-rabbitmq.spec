@@ -2,8 +2,8 @@
 %define upstream_name puppet-rabbitmq
 
 Name:           puppet-rabbitmq
-Version:        XXX
-Release:        XXX
+Version:        13.7.0
+Release:        1%{?dist}
 Summary:        Installs, configures, and manages RabbitMQ.
 License:        ASL 2.0
 
@@ -44,5 +44,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/rabbitmq/
 
 
 %changelog
+* Tue Sep 24 2024 RDO <dev@lists.rdoproject.org> 13.7.0-1
+- Update to 13.7.0
+
 
 
